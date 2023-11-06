@@ -1,5 +1,6 @@
 {
   "name": "e-commerce-firebase",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
