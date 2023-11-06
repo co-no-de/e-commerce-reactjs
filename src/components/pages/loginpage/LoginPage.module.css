@@ -1,0 +1,131 @@
+.container {
+  padding: clamp(5px, 2vh, 32px) 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  min-height: calc(100vh - 280px); 
+}
+
+input {
+  font-family: var(--fontText);
+}
+
+.form {
+  margin: clamp(5px, 2vh, 32px) 0;
+  width: 90%;
+  max-width: 650px;
+}
+
+.formInput {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: clamp(5px, 2vh, 32px) 0;
+}
+
+.formInput div:nth-child(1) {
+  width: 100px;
+}
+
+.formInput div:nth-child(2) {
+  flex: 1;
+}
+
+.formInput div input {
+  width: 100%;
+  padding: 6px;
+}
+
+.innerContainer {
+  font-size: 13px;
+}
+
+.rowContainer {
+  display: flex;
+  padding: 1.5px;
+}
+
+.error {
+  color: red;
+  font-family: var(--fontText);
+  font-size: 12px;
+}
+
+.error2 {
+  color: red;
+  font-family: var(--fontText);
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.correct {
+  color: green;
+  font-family: var(--fontText);
+  font-size: 12px;
+}
+
+.correct2 {
+  color: green;
+  font-family: var(--fontText);
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  margin: clamp(5px, 2vh, 32px) 6px;
+  padding: 12px;
+  background-color: var(--primary);
+  outline: none;
+  border: none;
+  color: white;
+  font-family: var(--fontSubHeading);
+  font-size: clamp(1rem, 0.965rem + 0.093vw, 1.188rem);
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+.emailInput {
+  margin-bottom: 14px;
+}
+
+.passwordContainer {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border: 1px solid var(--outlineGrey);
+}
+
+input:focus {
+  outline: none;
+}
+
+.passwordContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.passwordLabelContainer {
+  width: 100px;
+}
+
+.passwordInnerContainer {
+  flex: 1;
+}
+
+.passwordInputContainer {
+  display: flex;
+  padding: 6px;
+  border: 1px solid var(--outlineGray);
+}
+
+.passwordInputContainer input {
+  flex: 1;
+  outline: none;
+  border: none;
+}

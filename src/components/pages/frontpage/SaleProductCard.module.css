@@ -1,0 +1,37 @@
+.container {
+  flex-basis: 210px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  margin: 16px;
+}
+
+.container img {
+  width: 100%;
+  aspect-ratio: 1 /1;
+  object-fit: contain;
+}
+
+.textContainer {
+  height: 45px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.priceContainer {
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+padding-bottom: 8px;
+
+}
+
+.priceContainer span {
+  background-color: red;
+  padding: 6px 16px;
+  border-radius: 6px;
+  color: white;
+  
+}

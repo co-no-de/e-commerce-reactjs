@@ -1,0 +1,35 @@
+.container {
+  border-top: 2px solid black;
+  margin: clamp(5px, 2vh, 32px) 0;
+  padding: 7px;
+  background-color: var(--lightGray);
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.productContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px;
+  background-color: white;
+}
+
+.productContainer span {
+  padding-left: 12px; 
+}
+
+
+.productContainer img {
+  width: 150px;
+  margin: 10px;
+}
+

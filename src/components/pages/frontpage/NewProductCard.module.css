@@ -1,0 +1,28 @@
+.container {
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.65); 
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.65);
+display: flex;
+flex-direction: column; 
+}
+
+.container img {
+  width: 100%;
+  aspect-ratio: 1 /1;
+  object-fit: contain; 
+;
+}
+
+.textContainer {
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container p {
+  padding: 9px;
+}
+
+
+
+

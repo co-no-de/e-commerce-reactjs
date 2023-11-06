@@ -1,0 +1,66 @@
+.container {
+  padding: clamp(5px, 2vh, 32px) 6px;
+  min-height: calc(100vh - 280px); 
+}
+
+.innerContainer {
+  width: 98%;
+  max-width: 950px;
+  margin: 0 auto;  
+}
+
+.innerContainer h2 {
+  padding-bottom: clamp(5px, 2vh, 32px)
+}
+
+.noLogInContainer,
+.loggedInContainer {
+display: flex;
+justify-content: center;
+gap: 18px;
+font-family: var(--fontSubHeading);
+font-size: 18px;
+margin-bottom: clamp(5px, 2vh, 32px);
+}
+
+
+.btn {
+  color: white;
+  background-color: var(--primary);
+  padding: 12px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.65); 
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.65);
+}
+
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.form {
+  width: 90%;
+  max-width: 650px; 
+  margin: 0 auto;
+  font-family: var(--fontText);
+}
+
+.formInput {
+  display: flex;  
+  margin-bottom: clamp(5px, 2vh, 32px);
+  align-items: center;
+}
+
+.formInput div:nth-child(1) {
+  width: 100px;
+}
+
+.formInput div:nth-child(2) {
+  flex: 1;
+}
+
+.formInput input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}

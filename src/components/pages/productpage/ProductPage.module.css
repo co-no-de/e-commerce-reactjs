@@ -1,0 +1,118 @@
+.container {
+  padding: clamp(5px, 2vh, 32px) 6px;
+  min-height: calc(100vh - 280px); 
+}
+
+.loadingContainer {
+  padding: clamp(5px, 2vh, 32px) 6px;
+  min-height: calc(100vh - 280px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  max-width: 1336px;
+  margin: 0 auto;
+
+  justify-content: center;
+}
+
+.imageContainer {
+  padding: clamp(5px, 2vh, 32px) 0;
+  display: flex;
+  justify-content: center;
+}
+
+.innerImageContainer {
+  max-width: 650px;
+}
+
+.innerImageContainer img {
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+}
+
+.btnContainer {
+  margin-top: 32px;
+}
+
+.addBtn {
+  display: inline-block;
+  width: 140px;;
+  background-color: var(--addYellow);
+  font-family: var(--fontText);
+  padding: 12px;
+  border-radius: 12px; 
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.buyBtn {
+  display: inline-block;
+  width: 140px;;
+  background-color: var(--addYellow);
+  font-family: var(--fontText);
+  padding: 12px;
+  border-radius: 12px; 
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.logInBtn {
+  display: inline-block;
+  width: 140px;;
+  background-color: var(--lightGray);
+  font-family: var(--fontText);
+  padding: 12px;
+  border-radius: 12px; 
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12px;
+}
+
+
+.addBtn:active,
+.buyBtn:active,
+.logInBtn:active {
+  transform: scale(1.1);
+}
+
+.price {
+  font-size: clamp(2.125rem, 2.287rem + -0.432vw, 1.25rem);
+  margin-top: clamp(5px, 2vh, 32px);
+}
+
+.saleContainer {
+display: flex;
+align-items: center;
+gap: 8px;
+margin-top: clamp(5px, 2vh, 32px);
+}
+
+.sale {
+text-decoration: line-through;
+font-size: 18px;
+color: red
+}
+
+.loadingContainer {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

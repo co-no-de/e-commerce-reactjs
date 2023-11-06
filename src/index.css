@@ -1,0 +1,66 @@
+@font-face {
+  font-family: RobotoSubHeading;
+  src: url("./assets/fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoHeading;
+  src: url("./assets/fonts/RobotoCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+
+:root {
+  --fontHeading: Poppins;
+  --fontSubHeading: RobotoSubHeading;
+  --fontText: RobotoHeading;
+  --inactiveBtn: #D3D3D3;
+  --primary: #00CED1;
+  --babyBlue: #AFEEEE;
+  --darkBlue: #13274F;
+  --addYellow: #FFC72C;
+  --inputEdit: #FFFF9E;
+  --buyYellow: #FFAC1C;
+  --lightGray: #D3D3D3;
+  --outlineGray: #8F8F9D;
+  --darkGray: #5A5A5A;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.active {
+  border-bottom: 4px solid white;
+}
+
+.heading {
+  font-family: var(--fontHeading);
+  text-align: center;
+  font-size: clamp(1.25rem, 1.042rem + 0.556vw, 2.375rem);
+  
+}
+
+
+.subHeading {
+font-family: var(--fontSubHeading);
+font-size: clamp(1.125rem, 1.009rem + 0.309vw, 1.75rem);
+}
+
+.defaultText {
+font-family: var(--fontText);
+font-size: clamp(1.063rem, 1.086rem + -0.062vw, 0.938rem);
+}
+
+.textAlign {
+  text-align: center;
+}

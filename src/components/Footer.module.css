@@ -1,0 +1,25 @@
+.container {
+  background-color: var(--primary);
+  padding: clamp(5px, 2vh, 32px) 16px;
+}
+
+.innerContainer {
+  max-width: 1336px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}

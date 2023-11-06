@@ -1,0 +1,48 @@
+.container {
+  padding: clamp(5px, 2vh, 32px) 6px;
+  min-height: calc(100vh - 280px);
+}
+
+.innerContainer {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.innerContainer h1 {
+  padding-bottom: clamp(5px, 2vh, 32px);
+}
+
+.rowContainer {
+  display: flex;
+  gap: 6px;
+  margin: clamp(5px, 2vh, 32px) 0;
+}
+
+.placeOrderBtn {
+  display: inline-block;
+  padding: 12px;
+  background-color: var(--addYellow);
+  border-radius: 13px;
+  cursor: pointer;
+  border: 2px solid var(--addYellow);
+  font-family: var(--fontText);
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+}
+
+.goToLogInBtn {
+  display: inline-block;
+  padding: 12px;
+  background-color: var(--lightGray);
+  border-radius: 13px;
+  cursor: pointer;
+  border: 2px solid var(--lightGray);
+  font-family: var(--fontText);
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+}
+
+.goToLogInBtn:active,
+.placeOrderBtn:active {
+  transform: scale(1.1);
+}

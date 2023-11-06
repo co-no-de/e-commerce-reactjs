@@ -1,0 +1,99 @@
+.container {
+  padding: clamp(5px, 2vh, 32px) 16px;
+  min-height: calc(100vh - 280px); 
+}
+
+.loadingContainer {
+  padding: clamp(5px, 2vh, 32px) 6px;
+  min-height: calc(100vh - 280px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.innerContainer {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.innerContainer h1 {
+  padding-bottom: clamp(8px, 1.8vh, 24px);
+}
+
+.filterssContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: clamp(5px, 2vh, 32px);
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: auto;
+  gap: 16px;  
+  justify-content: center;
+}
+
+.productCard {
+  
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.65);
+  color: black
+}
+
+.titleContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 70px;
+
+}
+
+.titleContainer h2 {
+  text-align: center;
+}
+
+.productCard img {
+  width: 100%;
+}
+
+.priceContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 30px;
+}
+
+.saleContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+.saleContainer span:first-child {
+  color: red;
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+select {
+  padding: 8px;
+}
+
+@media(max-width: 1050px) {
+  .productsContainer {  
+    grid-template-columns: repeat(2, 300px);
+ 
+  }
+}
+
+
+@media(max-width: 700px) {
+  .productsContainer {  
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px
+ 
+  }
+}
